@@ -1,1 +1,9 @@
-
+transfered Sales data file vehicle_sales_data.csv To local /tmp folder
+# to copy vhicles_sales_dta.csv file to hdfs directory rezaul
+hadoop fs -put /tmp/vehicle_sales_data.csv  /user/cloudera/rezaul 
+# to creaate database
+create database hive_project_b1
+use hive project_b1;
+#create a internal table 
+create table sales_order_data_csv
+(
